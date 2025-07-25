@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #1f1c2c, #928dab);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.player-box, .lyrics-box {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.player-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  position: relative; /* supaya wave tidak ganggu */
+  overflow: hidden;
+}
+
+.lyrics-box {
+  flex: 2;
+  max-height: 550px;
+  overflow-y: auto;
+}
+
+.track-art {
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+.track-info {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.track-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.track-artist {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* ✅ Wave animasi diperbaiki agar tidak jendul */
+.wave {
+  display: flex;
+  gap: 5px;
+  margin: 1rem 0;
+  height: 30px; /* jaga tinggi tetap */
+  overflow: hidden;
+}
+
+.wave .stroke {
+  width: 4px;
+  height: 20px; /* tinggi tetap */
+  background: white;
+  animation: waveAnim 1s infinite;
+  transform-origin: bottom; /* stabilkan animasi */
+}
+
+.wave.loader .stroke:nth-child(1) { animation-delay: 0s; }
+.wave.loader .stroke:nth-child(2) { animation-delay: 0.1s; }
+.wave.loader .stroke:nth-child(3) { animation-delay: 0.2s; }
+.wave.loader .stroke:nth-child(4) { animation-delay: 0.3s; }
+.wave.loader .stroke:nth-child(5) { animation-delay: 0.4s; }
+.wave.loader .stroke:nth-child(6) { animation-delay: 0.5s; }
+
+/* ✅ Gunakan transform, bukan height */
+@keyframes waveAnim {
+  0%, 100% { transform: scaleY(0.5); }
+  50% { transform: scaleY(1.5); }
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.slider_container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.seek_slider, .volume_slider {
+  width: 100%;
+  accent-color: white;
+}
+
+.lyrics-container {
+  padding: 1rem;
+}
+
+.lyric-line {
+  margin-bottom: 10px;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+}
+
+.lyric-line.active {
+  color: #f50000d7;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 4px 8px;
+  border-radius: 8px;
+}

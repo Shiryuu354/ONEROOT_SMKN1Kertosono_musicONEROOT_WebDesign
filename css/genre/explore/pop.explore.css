@@ -1,0 +1,145 @@
+:root {
+    --bg: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #f5f5f5;
+    --subtext-color: #bbb;
+    --accent-color: #c29958;
+    --btn-bg: #c29958;
+    --btn-hover-bg: #ddb46b;
+    --header-bg: #c29958;
+    --header-text: #000;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Header Section with description box */
+  .explore-hero {
+    background: var(--header-bg);
+    color: var(--header-text);
+    max-width: 700px;
+    margin: 0 auto 60px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  }
+  
+  .explore-hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .explore-hero p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000;
+    opacity: 0.9;
+  }
+  
+  /* Container */
+  .explore-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Grid layout */
+  .explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+  }
+  
+  /* Card layout */
+  .explore-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255 255 255 / 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .explore-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  /* Image on top */
+  .explore-thumb {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  
+  /* Song info */
+  .explore-info h3 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+  }
+  
+  .explore-info p {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    color: var(--subtext-color);
+  }
+  
+  .explore-info small {
+    font-size: 0.85rem;
+    color: var(--subtext-color);
+  }
+  
+  /* Buttons layout */
+  .card-buttons {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .play-btn {
+    background-color: var(--btn-bg);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .play-btn:hover {
+    background-color: var(--btn-hover-bg);
+  }
+ 
+  /* Responsive */
+  @media (max-width: 600px) {
+    .explore-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .card-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .explore-thumb {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+    }
+  }
+  

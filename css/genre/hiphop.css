@@ -1,0 +1,248 @@
+:root {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #f5f5f5;
+    --subtext: #bbb;
+    --accent: #5eeec0c1;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Header Section */
+.glass-header {
+    background: var(--accent);
+    padding: 60px 20px;
+    text-align: center;
+    color: #000;
+}
+
+.glass-header .label {
+    text-transform: uppercase;
+    font-size: 13px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+.glass-header h1 {
+    font-size: 2.6rem;
+    margin: 8px 0 0;
+}
+
+/* Description Section */
+.glass-description {
+    padding: 40px 24px;
+    background: #1a1a1a;
+    text-align: center;
+}
+
+.glass-description .desc-text {
+    max-width: 600px;
+    margin: auto;
+    color: var(--subtext);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.glass-button {
+    background: var(--accent);
+    color: #000;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.glass-button:hover {
+    background: #87e7e2;
+}
+
+/* Track List */
+.glass-track-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Card */
+.glass-card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 0 14px rgba(255, 255, 255, 0.05);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Artist Info */
+.card-info h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.artist-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.artist-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+}
+
+.artist-box p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--subtext);
+}
+
+/* Wave & Emoji Row */
+.wave-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.css-wave {
+    flex: 1;
+    height: 32px;
+    border-radius: 6px;
+    background: repeating-linear-gradient(to right,
+            var(--accent),
+            var(--accent) 6px,
+            transparent 6px,
+            transparent 12px);
+    animation: moveWave 1.5s linear infinite;
+}
+
+@keyframes moveWave {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 60px 0;
+    }
+}
+
+/* Emoji Buttons */
+.emoji-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.emoji-buttons button {
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: var(--text);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.emoji-buttons button:hover {
+    color: var(--accent);
+}
+
+/* Play Button */
+.play-btn {
+    background: var(--accent);
+    color: #000;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.play-btn:hover {
+    background: #87e7e2;
+}
+
+/* Track Duration */
+.card-time {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 0.85rem;
+    color: var(--subtext);
+}
+
+.lyrics-btn {
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    padding: 9px 20px; 
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block; 
+    text-align: center;
+    height: auto; 
+    line-height: normal;
+    box-sizing: border-box;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.lyrics-btn:hover {
+  background: var(--accent);
+  color: #121212;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wave-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .artist-box {
+        flex-direction: row;
+    }
+
+    .play-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .lyrics-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 7px;
+    }
+    
+    .glass-description .desc-text {
+        padding: 0 10px;
+    }
+}
