@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Comatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>musicONEROOT</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontAwesome/css/all.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Music<span>ONEROOT</span></a>
+
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#instrument">Instrumen</a>
+        <a href="#genre">Genre</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+        <a href="form login/Login.html" id="log-in"
+          ><i class="fa-solid fa-right-to-bracket fa-xl"></i
+        ></a>
+        <a href="#" id="menu"><i class="fa-solid fa-bars fa-xl"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Mari Belajar <span>Musik</span></h1>
+        <p>
+          Temukan keindahan musik dan mulai perjalananmu menguasai alat musik
+          favorit. Dari dasar hingga teknik lanjutan, semua bisa kamu pelajari
+          dengan mudah dan menyenangkan. Yuk, bergabung dan wujudkan mimpimu
+          menjadi musisi handal!
+        </p>
+
+        <a href="form login/Login.html" class="cta">Join</a>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="about enhanced fade-slide">
+      <div class="container">
+        <h2><span>Tentang</span>Kami</h2>
+
+        <div class="row fade-slide">
+          <div class="about-img">
+            <img src="img/tentang-kami.jpg" alt="Tentang Kami" />
+          </div>
+          <div class="content">
+            <h3>Kenapa Memilih Pembelajaran Kami?</h3>
+            <p>
+              MusicONEROOT adalah tempat belajar musik yang seru dan fleksibel,
+              cocok untuk pemula hingga calon musisi profesional. Kamu bisa
+              belajar langsung dari musisi berpengalaman, kapan saja dan di mana
+              saja, sesuai gaya dan ritmemu sendiri. Dengan komunitas yang
+              suportif dan materi yang terus berkembang, MusicONEROOT bukan
+              sekadar tempat belajar—ini adalah ruang untuk tumbuh, berekspresi,
+              dan menemukan jati diri lewat musik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- About Instrument start-->
+    <section id="instrument" class="instrument">
+      <h2><span>Macam-Macam</span>Instrumen</h2>
+      <p>
+        Dunia musik penuh dengan beragam instrumen yang unik dan menarik. Mulai
+        dari alat petik seperti gitar dan ukulele, alat tiup seperti saxophone
+        dan flute, hingga alat pukul seperti drum dan cajón. Setiap instrumen
+        punya karakter suara dan cara bermain yang berbeda, membuat musik
+        semakin kaya dan berwarna. Yuk, kenali lebih dekat berbagai instrumen
+        supaya kamu bisa pilih yang paling cocok untuk mulai belajar!
+      </p>
+
+      <div class="grid">
+        <div class="card" onclick="goToPage('instrument/piano.html')">
+          <img src="img/piano.png" alt="Piano" />
+          <h3>Piano</h3>
+          <p>It is a musical instrument played using a keyboard.</p>
+        </div>
+        <div class="card" onclick="goToPage('instrument/gitar.html')">
+          <img src="img/guitar.png" alt="Guitar" />
+          <h3>Guitar</h3>
+          <p>
+            Played by plucking or strumming the strings with fingers or a pick.
+          </p>
+        </div>
+        <div class="card" onclick="goToPage('instrument/voice.html')">
+          <img src="img/mic.png" alt="Voice" />
+          <h3>Voice</h3>
+          <p>Performed by using the vocal cords to sing melodies and lyrics.</p>
+        </div>
+        <div class="card" onclick="goToPage('instrument/drums.html')">
+          <img src="img/drum.png" alt="Drums" />
+          <h3>Drum</h3>
+          <p>Can play by striking with the hand or two sticks.</p>
+        </div>
+        <div class="card" onclick="goToPage('instrument/bass.html')">
+          <img src="img/bass.png" alt="bass" />
+          <h3>Bass</h3>
+          <p>Played by strumming the strings with fingers or a pick.</p>
+        </div>
+      </div>
+    </section>
+    <!-- About Instrument end-->
+    <!-- About Genres start -->
+    <section id="genre" class="genre">
+      <h2><span>Macam-Macam</span>Genre</h2>
+      <p>
+        Musik terdiri dari banyak genre yang beragam, mulai dari pop yang easy
+        listening, rock yang energik, jazz yang penuh improvisasi, hingga musik
+        elektronik yang modern dan futuristik. Setiap genre punya ciri khas dan
+        suasana berbeda yang bisa kamu eksplorasi sesuai selera dan mood. Dengan
+        mengenal berbagai genre, kamu bisa lebih mudah menemukan gaya musik yang
+        paling kamu sukai dan kuasai.
+      </p>
+
+      <div class="gallery">
+        <div class="gallery-container">
+          <img
+            class="gallery-item gallery-item-1"
+            src="img/classical.jpg"
+            data-index="1"
+          />
+          <img
+            class="gallery-item gallery-item-2"
+            src="img/beats.jpg"
+            data-index="2"
+          />
+          <img
+            class="gallery-item gallery-item-3"
+            src="img/hiphop.jpg"
+            data-index="3"
+          />
+          <img
+            class="gallery-item gallery-item-4"
+            src="img/rock.jpg"
+            data-index="4"
+          />
+          <img
+            class="gallery-item gallery-item-5"
+            src="img/reggae.jpg"
+            data-index="5"
+          />
+        </div>
+        <div class="gallery-controls"></div>
+      </div>
+      <div class="genre-grid">
+        <div class="genre-card" onclick="goToPage('genre/pop.html')">
+          <h3>Pop</h3>
+          <div class="genre-content">
+            <img class="genre-image" src="img/pop.jpg" alt="Pop" />
+          </div>
+        </div>
+        <div class="genre-card" onclick="goToPage('genre/jazz.html')">
+          <h3>Jazz</h3>
+          <div class="genre-content">
+            <img class="genre-image" src="img/jazz.jpg" alt="Pop" />
+          </div>
+        </div>
+        <div class="genre-card" onclick="goToPage('genre/edm.html')">
+          <h3>Edm</h3>
+          <div class="genre-content">
+            <img class="genre-image" src="img/edm.jpg" alt="Pop" />
+          </div>
+        </div>
+        <div class="genre-card" onclick="goToPage('genre/hiphop.html')">
+          <h3>Hip Hop</h3>
+          <div class="genre-content">
+            <img class="genre-image" src="img/hiphop.jpg" alt="Pop" />
+          </div>
+        </div>
+        <div class="genre-card" onclick="goToPage('genre/funk.html')">
+          <h3>Funk</h3>
+          <div class="genre-content">
+            <img class="genre-image" src="img/funk.jpg" alt="Pop" />
+          </div>
+        </div>
+        <div class="genre-card" onclick="goToPage('genre/country.html')">
+          <h3>Country</h3>
+          <div class="genre-content">
+            <img class="genre-image" src="img/country.jpg" alt="Pop" />
+          </div>
+        </div>
+        <div class="genre-card" onclick="goToPage('genre/rock.html')">
+          <h3>Rock</h3>
+          <div class="genre-content">
+            <img class="genre-image" src="img/rock.jpg" alt="Pop" />
+          </div>
+        </div>
+        <div class="genre-card" onclick="goToPage('genre/classical.html')">
+          <h3>Classical</h3>
+          <div class="genre-content">
+            <img class="genre-image" src="img/classical.jpg" alt="Pop" />
+          </div>
+        </div>
+        <div class="genre-card" onclick="goToPage('genre/rnb.html')">
+          <h3>Rnb</h3>
+          <div class="genre-content">
+            <img class="genre-image" src="img/rnb.jpg" alt="Pop" />
+          </div>
+        </div>
+        <div class="genre-card" onclick="goToPage('genre/reggae.html')">
+          <h3>Reggae</h3>
+          <div class="genre-content">
+            <img class="genre-image" src="img/reggae.jpg" alt="Pop" />
+          </div>
+        </div>
+        <div class="genre-card" onclick="goToPage('genre/beats.html')">
+          <h3>Beats</h3>
+          <div class="genre-content">
+            <img class="genre-image" src="img/beats.jpg" alt="Pop" />
+          </div>
+        </div>
+        <div class="genre-card" onclick="goToPage('genre/acoustic.html')">
+          <h3>Acoustic</h3>
+          <div class="genre-content">
+            <img src="img/acoustic.jpg" alt="Pop" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row"></div>
+    </section>
+    <!-- About Genres end -->
+
+    <!-- About Contact start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span>Kami</h2>
+      <p>
+        Kami siap membantu dan menjawab segala pertanyaan kamu seputar belajar
+        musik. Jangan ragu untuk menghubungi kami melalui formulir kontak atau
+        media sosial yang tersedia. Mari bersama-sama wujudkan passion musikmu!
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253292.62406307802!2d112.54786376509794!3d-7.275249059167424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1750169667747!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+        <form action="">
+          <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+          <div>
+            <button type="submit" class="btn">kirim pesan</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#instrument">Instrumen</a>
+        <a href="#genres">Genres</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">ONEROOT</a>. | &copy; 2025</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
